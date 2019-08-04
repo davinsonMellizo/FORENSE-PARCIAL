@@ -137,7 +137,13 @@ def generarWord(info):
 
 
 def cadenaCustodia(ruta):
+
     
+    ult = len(ruta)-1
+
+    if ruta[ult] != "/":
+        ruta = ruta+"/"
+
     listaArchivos = ls(ruta)
     numEvidencias = len(listaArchivos)
         
@@ -175,7 +181,14 @@ def cadenaCustodia(ruta):
 
     else:
         print("Directori vacio")
+
+
 def cadenaCustodiaVacia(ruta):
+
+    ult = len(ruta)-1
+
+    if ruta[ult] != "/":
+        ruta = ruta+"/"
     
     listaArchivos = ls(ruta)
     numEvidencias = len(listaArchivos)
@@ -209,6 +222,3 @@ def cadenaCustodiaVacia(ruta):
 
     else:
         print("Directorio vacio")
-    
-
-
