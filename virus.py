@@ -35,6 +35,7 @@ def analizarRe(carpeta):
 	for i in os.listdir(carpeta):
 		if os.path.isfile(os.path.join(carpeta,i)):
 			print(i+": ")
+			print("join.."+os.path.join(carpeta,i))
 			with open(os.path.join(carpeta,i), "rb") as f:
 				file_hash = md5(f.read()).hexdigest()
 			response = api.get_file_report(file_hash)

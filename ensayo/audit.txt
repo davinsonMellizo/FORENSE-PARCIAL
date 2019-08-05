@@ -1,0 +1,24 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Aug  4 21:34:55 2019
+Invocation: foremost -t all -i /dev/mmcblk0p1 -o /root/Documents/FORENSE/PARCIAL3/FORENSE-PARCIAL3/ensayo 
+Output directory: /root/Documents/FORENSE/PARCIAL3/FORENSE-PARCIAL3/ensayo
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: /dev/mmcblk0p1
+Start: Sun Aug  4 21:34:55 2019
+Length: 51 MB (53477376 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000248.jpg 	      34 KB 	     126976 	 
+1:	00001641.jpg 	      12 KB 	     840192 	 
+Finish: Sun Aug  4 21:34:59 2019
+
+2 FILES EXTRACTED
+	
+jpg:= 2
+------------------------------------------------------------------
+
+Foremost finished at Sun Aug  4 21:34:59 2019
