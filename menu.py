@@ -151,7 +151,7 @@ def ayudaRecuperarArchivos():
 	print("========================================Recuperar archivos===========================================")
 	print("| Sintaxis:                                                                                          |")
 	print("| python main.py -ra Extensión volumen directorio                                                    |")
-	print("| python main.py -raa /dev/volumen /directorio                                                       |")
+	print("| python main.py -raa volumen directorio                                                             |")
 	print("|                                                                                                    |")
 	print("| Para hacer uso de este script se debe instalar la aplicacion foremost                              |")
 	print("| Extensión: Hace referencia a la extencion del tipo de Archivo que quiere recuperar                 |")

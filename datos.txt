@@ -1,2 +1,5 @@
 ArVirus.zip
 Dbgview.zip
+x-special/nautilus-clipboard
+cover_page.jpg
+virus.txt

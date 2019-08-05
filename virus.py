@@ -28,14 +28,13 @@ def analizar():
 	print("Tiempo de Ejecucion", tiempo)
 
 def analizarRe(carpeta):
-	API_KEY = "a9089095456a6c812626239b837c894abcea66938853813118ebf16a5fff1690"
+	API_KEY = "2fb63fac0369e7b86322cc1d39eee318eb3c0e1db503989caecfa90793978562"
 	api = PublicApi(API_KEY)
 
 	archivos=carpetas=0
 	for i in os.listdir(carpeta):
 		if os.path.isfile(os.path.join(carpeta,i)):
 			print(i+": ")
-			print("join.."+os.path.join(carpeta,i))
 			with open(os.path.join(carpeta,i), "rb") as f:
 				file_hash = md5(f.read()).hexdigest()
 			response = api.get_file_report(file_hash)
