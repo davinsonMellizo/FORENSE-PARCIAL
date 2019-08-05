@@ -14,10 +14,13 @@ def analizar():
 		file_hash = md5(f.read()).hexdigest()
 	response = api.get_file_report(file_hash)
 	if response["response_code"] == 200:
-		if response["results"]["positives"] > 0:
-			print("Archivo malicioso.")
-		else:
-			print("Archivo seguro.")
+		try:
+			if response["results"]["positives"] > 0:
+				print("Archivo malicioso.")
+			else:
+				print("Archivo seguro.")
+		except:
+			print("No ha podido obtenerse el análisis del archivo.")
 	else:
 		print("No ha podido obtenerse el análisis del archivo.")
 	insFinal=time.time()
@@ -36,10 +39,13 @@ def analizarRe(carpeta):
 				file_hash = md5(f.read()).hexdigest()
 			response = api.get_file_report(file_hash)
 			if response["response_code"] == 200:
-				if response["results"]["positives"] > 0:
-					print("Archivo malicioso.")
-				else:
-					print("Archivo seguro.")
+				try:
+					if response["results"]["positives"] > 0:
+						print("Archivo malicioso.")
+					else:
+						print("Archivo seguro.")
+				except:
+					print("No ha podido obtenerse el análisis del archivo.")
 			else:
 				print("No ha podido obtenerse el análisis del archivo.")
 			print("==================================================")
