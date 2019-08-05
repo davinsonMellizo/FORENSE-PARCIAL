@@ -8,6 +8,12 @@ def obtenerImagen():
 	print("Procesando...")
 	comandoDD="dd if="+sys.argv[2]+" of="+sys.argv[3]
 	os.system(comandoDD)
+	print("HASH: ")
+	comandoMD5imagen="md5sum "+sys.argv[3]
+	os.system(comandoMD5imagen)
+	print("HASH: ")
+	comandoMD5disco="md5sum "+sys.argv[2]
+	os.system(comandoMD5disco)
 	insFinal=time.time()
 	tiempo=insFinal- insInicial
 	print("Tiempo de Ejecucion", tiempo)
